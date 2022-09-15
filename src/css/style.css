@@ -1,0 +1,128 @@
+html{
+    font-size: 62.5%;
+    background-color: var(--color-principal);
+
+    
+}
+.container-master{
+    display: grid;
+    grid-template-areas: 
+    "container-header"
+    "container-main"
+    "container-footer";
+    background: url(../images/bg-desktop.svg) no-repeat center;
+    background-size: cover;
+    justify-content: center;
+
+}
+
+
+/* header */
+.container-header{
+    grid-area: container-header;
+    padding: 55px 0 64px 68px;
+}
+.container-header img{
+    width: 218px;
+}
+
+
+
+/* main */
+.container-main{
+    grid-area: container-main;
+    display: grid;
+    grid: "image description";
+    grid-template-columns: auto 520px;
+    margin-top: 19px;
+    margin-left: 74px;
+    gap: 52px;
+}
+
+.container-main .mockups{
+    display: flex;
+    grid-area: image;
+}
+.container-main .mockups img{
+    width: 100%;
+}
+
+.container-main .description{
+    display: flex;
+    grid-area: description;
+    color: #fff;
+    flex-direction: column;
+    gap: 17px;
+    margin: 40px 0;
+}
+.container-main .description .title{
+    font-family: var(--font-2);
+    display: flex;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 62px;
+}
+.container-main .description .text-information{
+    display: flex;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 28px;
+    margin-bottom: 8px;
+}
+.container-main .description .btn{
+    height: 52px;
+    width: 200px;
+    color: var(--color-principal);
+    font-family: var(--font-2);
+    font-size: 1.8rem;
+    border-radius: 60px;
+    border:none;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.305);
+}
+.container-main .description .btn:hover{
+    background-color: var(--color-of-selection);
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+/* footer */
+.container-footer{
+    grid-area: container-footer;
+    display: flex;
+    color: #fff;
+    font-weight: 400;
+    justify-content: flex-end;
+    padding: 20px 10PX 20px 0;
+}
+.container-footer .container{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-footer .container .attribution{
+    display: flex;
+    font-size: 1.6rem;
+}
+.container-footer .social{
+    display: flex;
+    gap: 20px;
+    font-size: 1.7rem;
+    padding: 0 30px ;
+}
+.container-footer .social i{
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+    padding: 12px;
+}
+
+.container-footer .social i:hover{
+    color: var(--color-of-selection);
+    border: 2px solid var(--color-of-selection);
+    font-weight: 600;
+
+}
