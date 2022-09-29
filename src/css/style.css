@@ -13,43 +13,40 @@ html{
     background: url(../images/bg-desktop.svg) no-repeat center;
     background-size: cover;
     justify-content: center;
-
+    min-width: 100vw;
+    min-height: 100vh;
 }
-
 
 /* header */
 .container-header{
     grid-area: container-header;
-    padding: 55px 0 64px 68px;
+    margin-left: 60px;
+    padding: 55px 0 64px 0px;
 }
 .container-header img{
     width: 218px;
 }
 
-
-
 /* main */
 .container-main{
     grid-area: container-main;
-    display: grid;
-    grid: "image description";
-    grid-template-columns: auto 520px;
-    margin-top: 19px;
-    margin-left: 74px;
+    display: flex;
+    margin-left: 60px;
     gap: 52px;
 }
 
 .container-main .mockups{
     display: flex;
-    grid-area: image;
 }
+
 .container-main .mockups img{
-    width: 100%;
+    width: 50vw;
+    margin: auto;
 }
 
 .container-main .description{
     display: flex;
-    grid-area: description;
+    width: 520px;
     color: #fff;
     flex-direction: column;
     gap: 17px;
@@ -66,9 +63,11 @@ html{
     display: flex;
     font-family: var(--font-1);
     font-weight: 400;
+    text-align: justify;
     font-size: 1.8rem;
     line-height: 28px;
-    margin-bottom: 8px;
+    margin-right: 50px;
+    margin-bottom: 10px;
 }
 .container-main .description .btn{
     height: 52px;
@@ -86,8 +85,6 @@ html{
     color: #fff;
 }
 
-
-
 /* footer */
 .container-footer{
     grid-area: container-footer;
@@ -95,29 +92,22 @@ html{
     color: #fff;
     font-weight: 400;
     justify-content: flex-end;
-    padding: 20px 10PX 20px 0;
+    padding: 20px 10px 20px 0;
 }
-.container-footer .container{
-    width: 60vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.container-footer .container .attribution{
-    display: flex;
-    font-size: 1.6rem;
-}
+
 .container-footer .social{
     display: flex;
     gap: 20px;
     font-size: 1.7rem;
-    padding: 0 30px ;
+    padding: 0 30px;
+    height: 50px;
 }
 .container-footer .social i{
     border: 2px solid #fff;
     border-radius: 50%;
     transition: 0.5s;
     padding: 12px;
+    cursor: pointer;
 }
 
 .container-footer .social i:hover{
